@@ -1,5 +1,7 @@
 # Snake AI Reinforcement Learning (with TPU on colab)
 
+**TPU Efficiency:** TPU acceleration shines for large-scale tensor computations. Although this game code uses neural network training, the bulk of the code (game logic) is not accelerated by TPU. You may not see huge performance gains, but this setup is useful for experimenting with TPU in reinforcement learning contexts.
+
 ## Instructions for Running on Google Colab from GitHub
 
 1. **Push Your Code to GitHub**  
@@ -45,6 +47,5 @@
 **Additional Notes:**
 
 - **Rendering:** Since TPU environments (and Colab TPU sessions) don’t support graphical display, the `render` option is set to `False`. If you want to test GUI locally (on your own machine with a GPU/CPU), you can change the parameter when instantiating `SnakeGameAI`.
-- **TPU Efficiency:** TPU acceleration shines for large-scale tensor computations. Although this game code uses neural network training, the bulk of the code (game logic) is not accelerated by TPU. You may not see huge performance gains, but this setup is useful for experimenting with TPU in reinforcement learning contexts.
 - **Saving/Loading Models:** The model is saved locally (in the Colab session’s file system). You might consider additional steps to upload your model to Google Drive or GitHub if you wish to preserve training progress.
 

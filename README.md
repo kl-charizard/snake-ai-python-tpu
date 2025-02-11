@@ -4,32 +4,29 @@
 
 ## Instructions for Running on Google Colab from GitHub
 
-1. **Push Your Code to GitHub**  
-   Save the code above (e.g., as `snake_tpu.py`) in a GitHub repository.
-
-2. **Open a New Google Colab Notebook**  
+1. **Open a New Google Colab Notebook**  
    Go to [Google Colab](https://colab.research.google.com/).
 
-3. **Enable TPU Runtime**  
+2. **Enable TPU Runtime**  
    - Click on **Runtime** in the menu, then **Change runtime type**.
    - Under **Hardware accelerator**, select **TPU**.
    - Click **Save**.
 
-4. **Clone Your GitHub Repository**  
+3. **Clone Your GitHub Repository**  
    In a Colab cell, run:
    ```python
    !git clone https://github.com/kl-charizard/snake-ai-python-tpu
    %cd snake-ai-python-tpu
    ```
 
-5. **Install torch_xla**  
+4. **Install torch_xla**  
    In a new cell, run:
    ```python
    !pip install torch-xla
    ```
    (Colab’s TPU runtime should already have compatible versions of PyTorch and torch_xla. If needed, restart the runtime after installation.)
 
-6. **Run Your Script**  
+5. **Run Your Script**  
    To start training (which is the default mode), run:
    ```python
    !python3 snake_tpu.py
@@ -39,7 +36,7 @@
    !python3 snake_tpu.py demo
    ```
 
-7. **Monitor the Output**  
+6. **Monitor the Output**  
    Training progress (game count, score, record) will be printed in the notebook’s output cell.
 
 ---

@@ -1,3 +1,5 @@
+# Snake AI Reinforcement Learning (with TPU on colab)
+
 ## Instructions for Running on Google Colab from GitHub
 
 1. **Push Your Code to GitHub**  

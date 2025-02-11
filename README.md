@@ -16,10 +16,9 @@
 4. **Clone Your GitHub Repository**  
    In a Colab cell, run:
    ```python
-   !git clone https://github.com/your_username/your_repository.git
-   %cd your_repository
+   !git clone https://github.com/kl-charizard/snake-ai-python-tpu
+   %cd snake-ai-python-tpu
    ```
-   *(Replace the URL with your repository’s URL.)*
 
 5. **Install torch_xla**  
    In a new cell, run:
